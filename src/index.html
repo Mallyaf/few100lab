@@ -3,16 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Front End Web 100</title>
+    <title>Tip Calculator </title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+        <h2>Tip Calculator</h2>
     </header>
     <main>
-        Hello, World!
+        <div class="input-group mb-3">
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="number"
+                       class="form-control"
+                       id="billTotal"
+                       placeholder="Total Bill">
+
+
+            </div>
+            <input type="text"
+                   class="form-control"
+                   aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+
+        <div class="btn-group"
+             role="group"
+             aria-label="Basic example">
+            <button type="button"
+                    class="btn btn-secondary">10%</button>
+            <button type="button"
+                    class="btn btn-secondary">15%</button>
+            <button type="button"
+                    class="btn btn-secondary">20%</button>
+        </div>
+
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Bill Amount: </li>
+                <li class="list-group-item">Tip Percentage:</li>
+                <li class="list-group-item">Amount of Tips:</li>
+                <li class="list-group-item">Total to be Paid: </li>
+            </ul>]
+        </div>
     </main>
 </body>
 
